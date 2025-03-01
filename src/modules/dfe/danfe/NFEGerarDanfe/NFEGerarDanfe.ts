@@ -17,7 +17,7 @@
 import bwipjs from 'bwip-js';
 import path from 'path';
 import fs from 'fs';
-import { ICMS, IPI, DetProd, NFEGerarDanfeProps, Ide, Dest, Emit, Total, Transp, InfAdic, Vol, ProtNFe } from 'src/core/types';
+import { ICMS, IPI, DetProd, NFEGerarDanfeProps, Ide, Dest, Emit, Total, Transp, InfAdic, Vol, ProtNFe } from 'core/types';
 import { format } from 'date-fns';
 import PDFDocument from 'pdfkit';
 import { fileURLToPath } from 'url';

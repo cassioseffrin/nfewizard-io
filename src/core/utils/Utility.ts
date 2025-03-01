@@ -22,7 +22,7 @@ import soapMethod from '../config/soapMethod.json';
 import cStatError from '../config/cStatError.json';
 import { getSchema } from '../../adapters/SchemaLoader';
 import Environment from '@Modules/environment/Environment.js';
-import { NFeWizardProps, GenericObject, SoapMethod, NFeServicosUrlType, SaveXMLProps, SaveJSONProps, ProtNFe, ServicesUrl } from 'src/core/types';
+import { NFeWizardProps, GenericObject, SoapMethod, NFeServicosUrlType, SaveXMLProps, SaveJSONProps, ProtNFe, ServicesUrl } from 'core/types';
 import XmlParser from './XmlParser';
 import xml2js from 'xml2js';
 import libxmljs from 'libxmljs';

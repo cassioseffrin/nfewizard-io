@@ -1,47 +1,34 @@
 {
-  "include": ["src/**/*.ts"],
-  "exclude": ["node_modules"],
   "compilerOptions": {
-    "module": "ESNext",
-    "target": "ESNext",
+    "module": "es2020",  // or "esnext" or "node16"
+    "target": "es2020",
     "moduleResolution": "node",
-    "outDir": "dist",
     "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "outDir": "dist",
+    "rootDir": "./src",
     "declaration": true,
     "declarationDir": "./dist/types",
-    "sourceMap": true, 
+    "sourceMap": true,
     "strict": true,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
-    "rootDir": "./src",
     "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
     "resolveJsonModule": true,
-    "baseUrl": ".",
+    "baseUrl": "./src",
+    "allowJs": true,
     "paths": {
-      "@Adapters/*": [
-        "src/adapters/*"
-      ],
-      "@Modules/*": [
-        "src/modules/*"
-      ],
-      "@Interfaces/*": [
-        "src/core/interfaces/*"
-      ],
-      "@Interfaces": [
-        "src/core/interfaces/index"
-      ],
-      "@Types/*": [
-        "src/core/types/*"
-      ],
-      "@Types": [
-        "src/core/types/index"
-      ],
-      "@Core/*": [
-        "src/core/*"
-      ],
-      "@Utils/*": [
-        "src/core/utils/*"
-      ]
-    },
+      "@Adapters/*": ["adapters/*"],
+      "@Modules/*": ["modules/*"],
+      "@Interfaces/*": ["core/interfaces/*"],
+      "@Interfaces": ["core/interfaces/index"],
+      "@Types/*": ["core/types/*"],
+      "@Types": ["core/types/index"],
+      "@Core/*": ["core/*"],
+      "@Utils/*": ["core/utils/*"]
+    }
   },
+  "include": ["src/**/*.ts"],
+  "exclude": ["node_modules"]
 }

@@ -1,3 +1,15 @@
+/**
+    * @description      : 
+    * @author           : 
+    * @group            : 
+    * @created          : 01/03/2025 - 15:25:21
+    * 
+    * MODIFICATION LOG
+    * - Version         : 1.0.0
+    * - Date            : 01/03/2025
+    * - Author          : 
+    * - Modification    : 
+**/
 /*
  * This file is part of NFeWizard-io.
  * 
@@ -14,7 +26,9 @@
  * You should have received a copy of the GNU General Public License
  * along with NFeWizard-io. If not, see <https://www.gnu.org/licenses/>.
  */
-import NFeWizard from './adapters/NFeWizard';
+
+import NFeWizard from '@Adapters/NFeWizard';
+
 
 export { NFeWizard as default };
 export * from './core/types';

@@ -15,7 +15,7 @@
  * along with NFeWizard-io. If not, see <https://www.gnu.org/licenses/>.
  */
 
-import { GenericObject } from 'src/core/types';
+import { GenericObject } from 'core/types';
 import * as convert from "xml-js";
 
 export default class XmlParser {

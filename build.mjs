@@ -43,11 +43,11 @@ const addJsExtensions = (dir) => {
 
 // Função para copiar arquivos específicos das pastas de origem para a pasta de destino
 const copyFiles = () => {
-    // Copia todos os arquivos na pasta 'src/assets' para a pasta 'dist'
+    // Copia todos os arquivos na pasta 'assets' para a pasta 'dist'
     execSync('npx copyfiles -u 1 src/assets/** dist');
-    // Copia todos os arquivos na pasta 'src/certs' para a pasta 'dist'
+    // Copia todos os arquivos na pasta 'certs' para a pasta 'dist'
     execSync('npx copyfiles -u 1 src/certs/** dist');
-    // Copia todos os arquivos na pasta 'src/schemas' para a pasta 'dist'
+    // Copia todos os arquivos na pasta 'schemas' para a pasta 'dist'
     execSync('npx copyfiles -u 1 src/schemas/** dist');
 };
 

@@ -1,3 +1,15 @@
+/**
+    * @description      : 
+    * @author           : 
+    * @group            : 
+    * @created          : 01/03/2025 - 14:58:30
+    * 
+    * MODIFICATION LOG
+    * - Version         : 1.0.0
+    * - Date            : 01/03/2025
+    * - Author          : 
+    * - Modification    : 
+**/
 /*
  * This file is part of NFeWizard-io.
  * 
@@ -14,7 +26,7 @@
  * You should have received a copy of the GNU General Public License
  * along with NFeWizard-io. If not, see <https://www.gnu.org/licenses/>.
  */
-import { COFINS, ICMS, PIS, dadosCOFINS, dadosICMS, dadosPIS } from 'src/core/types';
+import { COFINS, ICMS, PIS, dadosCOFINS, dadosICMS, dadosPIS } from 'core/types';
 
 function filterFieldsByType<T extends object>(source: any, requiredFields: (keyof T)[]): Partial<T> {
     const result: Partial<T> = {};

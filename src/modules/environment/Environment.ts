@@ -16,7 +16,7 @@
  */
 import https from 'https';
 
-import { NFeWizardProps } from 'src/core/types'
+import { NFeWizardProps } from 'core/types'
 import { AxiosInstance } from 'axios';
 
 import AxiosHttpClient from './AxiosHttpClient';

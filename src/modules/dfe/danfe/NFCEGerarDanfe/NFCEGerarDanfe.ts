@@ -29,7 +29,7 @@
 import bwipjs from 'bwip-js';
 import path from 'path';
 import fs from 'fs';
-import { DetProd, NFEGerarDanfeProps, Ide, Dest, Emit, Total, Transp, InfAdic, ProtNFe, Pag, InfNFeSupl } from 'src/core/types';
+import { DetProd, NFEGerarDanfeProps, Ide, Dest, Emit, Total, Transp, InfAdic, ProtNFe, Pag, InfNFeSupl } from 'core/types';
 import { format, parseISO } from 'date-fns';
 import PDFDocument from 'pdfkit';
 import QRCode from 'qrcode';

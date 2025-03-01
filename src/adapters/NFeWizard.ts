@@ -1,3 +1,15 @@
+/**
+    * @description      : 
+    * @author           : 
+    * @group            : 
+    * @created          : 01/03/2025 - 15:08:58
+    * 
+    * MODIFICATION LOG
+    * - Version         : 1.0.0
+    * - Date            : 01/03/2025
+    * - Author          : 
+    * - Modification    : 
+**/
 /*
  * This file is part of NFeWizard-io.
  * 
@@ -32,7 +44,7 @@ import {
     DesconhecimentoDaOperacao,
     EPEC,
     EmailParams,
-} from 'src/core/types';
+} from 'core/types';
 import { NFeWizardImpl, NFeWizardServiceImpl } from '@Interfaces';
 import NFeWizardService from '@Modules/dfe/nfe/services/NFeWizard/NFeWizardService';
 

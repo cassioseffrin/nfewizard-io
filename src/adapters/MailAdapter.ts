@@ -15,7 +15,7 @@
  * along with NFeWizard-io. If not, see <https://www.gnu.org/licenses/>.
  */
 import Environment from '@Modules/environment/Environment.js';
-import { EmailConfig, EmailParams } from 'src/core/types';
+import { EmailConfig, EmailParams } from 'core/types';
 import nodemailer from 'nodemailer';
 
 class MailController {
