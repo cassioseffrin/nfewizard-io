@@ -1,3 +1,15 @@
+/**
+    * @description      : 
+    * @author           : 
+    * @group            : 
+    * @created          : 15/03/2025 - 18:24:20
+    * 
+    * MODIFICATION LOG
+    * - Version         : 1.0.0
+    * - Date            : 15/03/2025
+    * - Author          : 
+    * - Modification    : 
+**/
 /*
  * This file is part of NFeWizard-io.
  * 
@@ -25,7 +37,7 @@ import Environment from '@Modules/environment/Environment.js';
 import { NFeWizardProps, GenericObject, SoapMethod, NFeServicosUrlType, SaveXMLProps, SaveJSONProps, ProtNFe, ServicesUrl } from 'src/core/types';
 import XmlParser from './XmlParser';
 import xml2js from 'xml2js';
-import libxmljs from 'libxmljs';
+import * as libxmljs from 'libxmljs2';
 import xsdAssembler from 'xsd-assembler';
 
 class Utility {

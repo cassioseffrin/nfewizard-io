@@ -27,17 +27,17 @@ export default [
             {
                 file: 'dist/esm/index.js',
                 format: 'esm',
-                sourcemap: false,
+                sourcemap: true,
             },
             {
                 file: 'dist/cjs/index.cjs',
                 format: 'cjs',
-                sourcemap: false,
+                sourcemap: true,
                 exports: 'named',
                 interop: 'auto',
-            },
+            }
         ],
-        external: ['fs', 'path', 'https', 'url', 'crypto', 'bwip-js', 'xsd-schema-validator', 'pdfkit', 'pem', 'libxmljs'],
+        external: ['fs', 'path', 'https', 'url', 'crypto', 'bwip-js', 'xsd-schema-validator', 'pdfkit', 'pem', 'libxmljs2'],
         plugins: [
             alias({
                 entries: [
@@ -69,10 +69,67 @@ export default [
                 ],
             }),
             terser({
-                compress: true,
-                keep_fnames: true,
-                mangle: false,
             }),
         ],
     },
 ];
+
+
+
+
+// export default {
+//     input: 'src/index.ts',
+//     output: [
+//             {
+//                 dir: 'dist/cjs',
+//                 format: 'cjs',
+//                 sourcemap: true,
+//                 sourcemapFile: 'dist/cjs/index.js.map',
+//                 compact: true,
+//                 inlineSources: true,
+//             },
+//     ],
+//     external: ['fs', 'path', 'https', 'url', 'crypto', 'bwip-js', 'xsd-schema-validator', 'pdfkit', 'pem', 'libxmljs'],
+//     plugins: [
+//         alias({
+//             entries: [
+//                 { find: '@Adapters', replacement: path.resolve(__dirname, 'src/adapters') },
+//                 { find: '@Modules', replacement: path.resolve(__dirname, 'src/modules') },
+//                 { find: '@Interfaces', replacement: path.resolve(__dirname, 'src/core/interfaces') },
+//                 { find: '@Interfaces/*', replacement: path.resolve(__dirname, 'src/core/interfaces/*') },
+//                 { find: '@Types', replacement: path.resolve(__dirname, 'src/core/types') },
+//                 { find: '@Types/*', replacement: path.resolve(__dirname, 'src/core/types/*') },
+//                 { find: '@Core', replacement: path.resolve(__dirname, 'src/core') },
+//                 { find: '@Core/*', replacement: path.resolve(__dirname, 'src/core/*') },
+//                 { find: '@Utils/*', replacement: path.resolve(__dirname, 'src/core/utils/*') },
+//             ],
+//         }),
+   
+//         json(),
+//         nodeResolve(),
+//         commonjs(),
+//         typescript({
+//             tsconfig: "tsconfig.json",
+//             sourceMap: true,
+//         }),
+//         replace({
+//             'process.env.NODE_ENV': JSON.stringify('production'),
+//             preventAssignment: true,
+//         }),
+//         copy({
+//             targets: [
+                
+//                 // CJS
+//                 { src: 'src/assets/*', dest: 'dist/cjs/assets' },
+//                 { src: 'src/certs/*', dest: 'dist/cjs/certs' },
+//                 { src: 'src/schemas/*', dest: 'dist/cjs/schemas' },
+//                 { src: 'src/resources/*', dest: 'dist/resources' },
+
+//             ],
+//         }),
+//         terser({
+//             keep_fnames: true,
+//             mangle: false,
+//         }),
+//     ],
+// };
