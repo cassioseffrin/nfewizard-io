@@ -1,3 +1,15 @@
+/**
+    * @description      : 
+    * @author           : 
+    * @group            : 
+    * @created          : 19/03/2025 - 21:07:44
+    * 
+    * MODIFICATION LOG
+    * - Version         : 1.0.0
+    * - Date            : 19/03/2025
+    * - Author          : 
+    * - Modification    : 
+**/
 /*
  * This file is part of NFeWizard-io.
  * 
@@ -19,3 +31,4 @@ import NFeWizard from './adapters/NFeWizard';
 export { NFeWizard as default };
 export * from './core/types';
 export * from './core/utils/NFEImposto'
+export type { DetProd, COFINSOutr, ICMSSN102, Imposto, LayoutNFe, NFe, NFEGerarDanfeProps, PISOutr, Prod, ProtNFe } from './core/types';
